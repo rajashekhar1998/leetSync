@@ -7,9 +7,10 @@ class Solution:
         total = sum(nums[:k])
         max_sum = total
 
-        while right < len(nums):
+        for i in range(k, len(nums)):
             total = total - nums[left-1] + nums[right]
             max_sum = max(total, max_sum)
-            left, right = left+1, right+1
+            left += 1
+            right += 1
 
         return max_sum/k
