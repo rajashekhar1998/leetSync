@@ -14,6 +14,7 @@ class Solution:
             if s[i-k] in vowels: current_vowels -= 1
             if s[i] in vowels: current_vowels += 1
             max_vowels = max(current_vowels,max_vowels)
+            if max_vowels == k: return k
 
         return max_vowels
         
