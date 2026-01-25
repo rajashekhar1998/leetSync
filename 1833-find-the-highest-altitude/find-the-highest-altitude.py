@@ -1,6 +1,7 @@
 class Solution:
     def largestAltitude(self, gain: List[int]) -> int:
         # relative heights wrt the preceeding point and not the starting point
+        # max_altitude is relative to the starting point
 
         relative_altitude = 0
         max_altitude = 0
