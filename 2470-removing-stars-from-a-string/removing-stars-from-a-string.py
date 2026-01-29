@@ -4,7 +4,7 @@ class Solution:
         stack = []
         i = 0
         while i < len(s):
-            if s[i] == "*":
+            if s[i] == "*" and stack:
                 stack.pop()
             else:
                 stack.append(s[i])
